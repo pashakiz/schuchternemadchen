@@ -1,0 +1,112 @@
+$container-xl:              1140px;
+$container-xxl:             1320px;
+/**/$container-xxxl:            1580px + 30px;
+/**/$body_bg_color:             #F5F4EB;
+/**/$btn_bg_color:              #5E66E3;
+/**/$btn_bg_color_hover:        #FF87DD;
+/**/$btn_bg_color_active:       #FF61D3;
+/**/$bg_dark_1:                 #999FDE;
+/**/$bg_dark_2:                 #2F2F2F;
+/**/$bg_light_1:                #D9D9D9;
+/**/$bg_light_2:                #B4B4B4;
+/**/$bg_light_3:                #99CEDB;
+/**/$bg_light_4:                #E1EDE7;
+/**/$bg_light_5:                #D3E9DE;
+/**/$font_color:                #2F2F2F;
+/**/$font_color2:               #F5F4EB;
+/**/$font_color3:               #FFFFFF;
+/**/$font_color4:               #4DCAE9;
+/**/$font_color5:               #344EFF;
+/**/$font_color6:               #99A0DE;
+/**/$font_color7:               #232323;
+$font_family:               "WorkSans", sans-serif;
+$font_family2:              "WorkSans", sans-serif;
+$font_weight:               400;
+/**/$font_size:                 22px;
+/**/$font_size_mobile:          15px;
+/**/$body_mb:                   130px;
+/**/$body_mb_lg:                130px;
+/**/$body_mb_xs:                100px;
+/**/$link_txt_family:           $font_family;
+/**/$link_color:                $font_color;
+/**/$link_hover_color:          $font_color4;
+/**/$link_active_color:         $font_color5;
+/**/$link_hover_color1:         #bd7667; //unuse
+/**/$link_hover_color2:         $link_hover_color; //unuse
+/**/$footer_height:             190px;
+/**/$footer_height_lg:          190px;
+/**/$footer_height_xs:          204px;
+/**/$footer_text_color:         $font_color2;
+/**/$footer_text_color_hover:   $font_color4;
+/**/$footer_text_color_active:  $font_color5;
+
+//Form
+$input_bg:                  $bg_light_4;
+$input_hover_bg:            $bg_light_5;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color7;
+$input_hover_txt_color:     $font_color7;
+$input_placeholder_color:   $font_color6;
+$input_txt_xs_size:         16px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            25px;
+$input_txt_lh:              1.5;
+$input_border_color:        $font_color;
+$input_border:              none;
+$input_hover_border:        none;
+$input_hover_focus_outline: none;
+$input_border_radius:       0;
+$textarea_border_radius:    0;
+$textarea_border_radius_mob:0;
+
+
+//User List page wider
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color;
+
+/**/
+@mixin circle($diameter, $background-color) {
+  width: $diameter;
+  height: $diameter;
+  background-color: $background-color;
+  border-radius: 100%;
+}
+
+@mixin img-mask($url, $top, $left, $width, $height, $bsize, $bpos) {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: 0;
+    bottom: 0;
+    width: $width;
+    height: $height;
+    background-image: url($url);
+    background-size: $bsize;
+    background-position: $bpos;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
+@mixin color-filter($color, $alpha) {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $alpha);
+  }
+}
+
+@mixin overflow-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

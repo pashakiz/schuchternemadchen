@@ -1,0 +1,39 @@
+.logo {
+  width: 260px;
+  height: 19px;
+  background-image: url('../img/icons/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  @media (min-width: 992px) {
+    width: 772px;
+    height: 57px;
+  }
+
+  &.logo_main {
+    margin: 42px 0;
+    @media (min-width: 992px) {
+      margin: 119px 0 0;
+    }
+    @media (min-width: 1200px) {
+      width: 590px;
+      height: 57px;
+    }
+    @media (min-width: 1400px) {
+      width: 650px;
+      height: 57px;
+    }
+    @media (min-width: 1650px) {
+      width: 772px;
+      height: 57px;
+    }
+  }
+
+  &.logo_login {
+    margin: 50px 0 29px;
+    @media (min-width: 992px) {
+      margin: 147px 0 94px;
+    }
+  }
+
+}
