@@ -1,31 +1,34 @@
 .btn {
   width: 100%;
-  height: 58px;
-  padding: 23px 10px;
-  border-radius: 0;
+  height: 53px;
+  padding: 18px 10px;
+  border-radius: 100px;
   background: $btn_bg_color;
-  background: linear-gradient(90deg, #99D6DB 0%, #5E66E3 100%);
-  border: none;
+  border: 1px solid $bg_dark_1;
   font-family: $font_family2;
-  font-size: 13px;
-  font-weight: 400;
-  color: $font_color2;
+  font-size: 16px;
+  font-weight: 700;
+  color: $font_color5;
   line-height: 1;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
   z-index: 1;
   transition: 0.5s background-image;
   letter-spacing: 2px;
+  box-shadow: 4px 6px 0px 0px $bg_dark_1;
   &:hover {
-    color: $font_color2;
+    color: $font_color5;
     background: $btn_bg_color_hover;
-    background: linear-gradient(90deg, #49DEEA 0%, #5E66E3 100%);
+    border-color: $bg_dark_1;
   }
   &:active {
-    color: $font_color2 !important;
+    color: $font_color5 !important;
     background: $btn_bg_color_active !important;
-    background: linear-gradient(90deg, #00ECFF 0%, #3743FF 100%) !important;
+    box-shadow: none;
+    transform: translate(3px, 5px);
+    @media (min-width: 992px) {
+      transform: translate(12px, 6px);
+    }
   }
   &:focus {
     outline: none;
@@ -34,9 +37,10 @@
 
   @media (min-width: 992px) {
     width: auto;
-    height: 78px;
-    font-size: 18px;
-    padding: 30px 15px;
+    height: 60px;
+    font-size: 21px;
+    padding: 20px 15px;
+    box-shadow: 13px 7px 0px 0px $bg_dark_1;
   }
 
   .btn__icon {
@@ -127,21 +131,19 @@
     font-size: 18px;
     background-color: $font_color2;
     background-image: none;
-    color: $font_color;
+    color: $font_color5;
     text-transform: uppercase;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     &:hover {
-      color: $font_color2;
+      color: $font_color5;
       background: $btn_bg_color_hover;
-      background: linear-gradient(90deg, #49DEEA 0%, #5E66E3 100%);
     }
     &:active {
       color: $font_color2 !important;
       background: $btn_bg_color_active !important;
-      background: linear-gradient(90deg, #00ECFF 0%, #3743FF 100%) !important;
     }
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {

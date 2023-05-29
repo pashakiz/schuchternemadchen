@@ -41,9 +41,10 @@ body {
   }
 
   &.container_unsubscribe {
-    padding-top: 38px;
+    padding-top: 37px;
+    max-width: 725px + 30px;
     @media (min-width: 1200px) {
-      padding-top: 140px;
+      padding-top: 68px;
     }
   }
 
