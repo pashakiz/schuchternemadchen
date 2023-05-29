@@ -14,10 +14,11 @@ $main-img-width-xxxl: 958px;
 $main-img-height-xxxl: 710px;
 
 .header {
+  background-color: $bg_light_1;
   &.header_page {
-    padding: 49px 0 50px;
+    padding: 19px 0 24px;
     @media (min-width: 1200px) {
-      padding: 119px 0 110px;
+      padding: 33px 0 45px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bg_dark_1;
+  background-color: $bg_light_1;
   position: relative;
 
   .footer__links {
@@ -18,9 +18,9 @@
 
   a.footer__link {
     font-family: $font_family2;
-    font-weight: 400;
+    font-weight: 700;
     color: $footer_text_color;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -40,7 +40,7 @@
   }
   @media (min-width: 992px) {
     a.footer__link {
-      font-size: 14px;
+      font-size: 18px;
     }
     a.footer__link {
       margin: 0;
@@ -60,9 +60,9 @@
 }
 
 .footer__bottom {
-  padding: 60px 0 50px;
+  padding: 50px 0 50px;
   @media (min-width: 992px) {
-    padding: 87px 0 86px;
+    padding: 73px 0 75px;
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -148,19 +148,19 @@ h1 {
 
 h2 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 41px;
-  color: $font_color2;
-  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1;
+  color: $font_color;
+  margin-bottom: 30px;
   margin-top: 0;
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  text-shadow: 3px 2px $font_color2;
   @media (min-width: 992px) {
-    text-align: left;
-    font-size: 58px;
-    line-height: 94px;
-    margin-bottom: 59px;
+    font-size: 76px;
+    line-height: 1;
+    margin-bottom: 68px;
+    text-shadow: 5px 6px $font_color2;
   }
 
   &.h2_index {
@@ -226,8 +226,8 @@ h2 {
 h3 {
   font-family: $font_family;
   font-weight: 700;
-  color: $font_color2;
-  font-size: 18px;
+  color: $font_color;
+  font-size: 16px;
   line-height: 39px;
   margin-top: 32px;
   margin-bottom: 7px;
@@ -235,7 +235,7 @@ h3 {
   @media (min-width: 992px) {
     font-size: 22px;
     line-height: 39px;
-    margin-top: 79px;
+    margin-top: 80px;
     margin-bottom: 19px;
   }
 }
@@ -264,7 +264,8 @@ p {
   line-height: 30px;
   margin-bottom: 1rem;
   @media (min-width: 992px) {
-    line-height: 39px;
+    line-height: 36px;
+    margin-bottom: 2rem;
   }
   b {
     &.bmark {

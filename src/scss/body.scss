@@ -5,72 +5,12 @@ body {
   color: $font_color;
   line-height: 1.5;
   background: $body_bg_color;
-  background-image: url('../img/bg/pattern-all-m.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100% 600px;
   @media (min-width: 992px) {
     font-size: $font_size;
   }
-  @media (min-width: 1200px) {
-    background-image: url('../img/bg/pattern-all-d.svg');
-    background-size: 100% 1210px;
-  }
 
   &.bg-color {
-    background: $bg_dark_1;
-    background-image: none;
-    color: $font_color2;
-    .header {
-      background: $body_bg_color;
-      background-image: url('../img/bg/pattern-all-m.svg');
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: 100% 600px;
-      @media (min-width: 992px) {
-        background-size: 100% 640px;
-      }
-      @media (min-width: 1200px) {
-        background-image: url('../img/bg/pattern-all-d.svg');
-        background-size: 100% 1210px;
-      }
-    }
-    .main {
-      @media (min-width: 1200px) {
-        background-image: url('../img/bg/pattern-bottom.svg');
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: 100% 925px;
-      }
-    }
-  }
-
-  &.bg-index {
-    background: $bg_dark_1;
-    background-image: none;
-    color: $font_color2;
-    .firstscreen {
-      background: $body_bg_color;
-      background-image: url('../img/bg/pattern-main-top-m.svg');
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: 100% 600px;
-      @media (min-width: 992px) {
-        background-size: 100% 640px;
-      }
-      @media (min-width: 1200px) {
-        background-image: url('../img/bg/pattern-main-top-d.svg');
-        background-size: 100% 735px;
-      }
-    }
-    .secondscreen {
-      @media (min-width: 1200px) {
-        background-image: url('../img/bg/pattern-main-bottom.svg');
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: 100% 1944px;
-      }
-    }
+    background: $bg_light_2;
   }
 
 }
@@ -94,9 +34,9 @@ body {
   }
 
   &.container_text {
-    padding-top: 38px;
+    padding-top: 37px;
     @media (min-width: 1200px) {
-      padding-top: 140px;
+      padding-top: 68px;
     }
   }
 
@@ -150,7 +90,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: $body_bg_color;
+  background: $bg_light_1;
   z-index: 999;
   transition: 0.5s all;
   opacity: 1;
