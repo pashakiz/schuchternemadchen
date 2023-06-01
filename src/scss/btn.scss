@@ -122,35 +122,35 @@
   }
 
   &.btn_3 { //change photo
-    width: 214px;
-    height: 45px;
+    width: 216px;
+    height: 50px;
     padding: 5px 5px;
-    border-radius: 0;
     font-family: $font_family;
-    font-weight: 400;
-    font-size: 18px;
-    background-color: $font_color2;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: $bg_light_3;
     background-image: none;
     color: $font_color5;
-    text-transform: uppercase;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
     &:hover {
       color: $font_color5;
       background: $btn_bg_color_hover;
     }
     &:active {
-      color: $font_color2 !important;
+      color: $font_color5 !important;
       background: $btn_bg_color_active !important;
+      transform: none;
     }
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
-      font-size: 25px;
+      font-size: 18px;
       padding: 15px 15px;
-      width: 281px;
-      height: 78px;
+      width: 380px;
+      height: 60px;
     }
   }
 

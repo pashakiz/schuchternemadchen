@@ -1,31 +1,28 @@
 $settings-img-width: 280px;
-$settings-img-height: 433px;
-$settings-img-width-lg: 435px;
-$settings-img-height-lg: 670px;
-$settings-img-width-xl: 435px;
-$settings-img-height-xl: 670px;
+$settings-img-height: 278px;
+$settings-img-width-lg: 538px;
+$settings-img-height-lg: 486px;
+$settings-img-width-xl: 538px;
+$settings-img-height-xl: 486px;
 
 $settings-img-wrap-width: 280px;
-$settings-img-wrap-height: 433px;
-$settings-img-wrap-width-lg: 435px;
-$settings-img-wrap-height-lg: 670px;
-$settings-img-wrap-width-xl: 435px;
-$settings-img-wrap-height-xl: 670px;
+$settings-img-wrap-height: 278px;
+$settings-img-wrap-width-lg: 538px;
+$settings-img-wrap-height-lg: 486px;
+$settings-img-wrap-width-xl: 538px;
+$settings-img-wrap-height-xl: 486px;
 
 .settings-form {
-  padding-top: 45px;
-  @media (min-width: 992px) {}
+  padding-top: 21px;
+  max-width: 280px;
+  margin: 0 auto;
+  @media (min-width: 992px) {
+    padding-top: 27px;
+    max-width: 538px;
+  }
   @media (min-width: 1200px) {
-    max-width: 600px;
+    max-width: 380px;
     margin: 0 0 0 auto;
-  }
-  @media (min-width: 1400px) {
-    max-width: 770px;
-    margin: 0 0 0 auto;
-  }
-  @media (min-width: 1650px) {
-    max-width: 830px;
-    margin: 0;
   }
 }
 
@@ -66,7 +63,7 @@ $settings-img-wrap-height-xl: 670px;
   // max-width: 100%;
   height: $settings-img-height;
   max-height: $settings-img-height;
-  border-radius: 115px;
+  //border-radius: 115px;
   background-color: $bg_light_4;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -79,7 +76,7 @@ $settings-img-wrap-height-xl: 670px;
     max-height: $settings-img-height;
   }
   @media (min-width: 992px) {
-    border-radius: 195px;
+    //border-radius: 195px;
     width: $settings-img-width-lg;
     max-width: $settings-img-width-lg;
     height: $settings-img-height-lg;
@@ -97,6 +94,33 @@ $settings-img-wrap-height-xl: 670px;
     max-width: $settings-img-width-xl;
     height: $settings-img-height-xl;
     max-height: $settings-img-height-xl;
+  }
+}
+
+.profile-photo__mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/bg/mask-settings-mob.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
+  width: $settings-img-wrap-width;
+  max-width: $settings-img-wrap-width;
+  height: $settings-img-wrap-height;
+  max-height: $settings-img-wrap-height;
+  @media (min-width: 992px) {
+    width: $settings-img-wrap-width-lg;
+    max-width: $settings-img-wrap-width-lg;
+    height: $settings-img-wrap-height-lg;
+    max-height: $settings-img-wrap-height-lg;
+  }
+  @media (min-width: 1200px) {
+    width: $settings-img-wrap-width-lg;
+    max-width: $settings-img-wrap-width-lg;
+    height: $settings-img-wrap-height-lg;
+    max-height: $settings-img-wrap-height-lg;
+    background-image: url('../img/bg/mask-settings.svg');
   }
 }
 

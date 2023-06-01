@@ -62,46 +62,48 @@
 }
 
 input.form-control {
-  height: 55px;
+  height: 50px;
   @media (min-width: 992px) {
-    height: 78px;
+    height: 60px;
   }
   @media (min-width: 1200px) {
-    height: 78px;
+    height: 60px;
   }
   &.form-control_login {
-    height: 55px;
+    height: 50px;
     @media (min-width: 1200px) {
-      height: 78px;
+      height: 60px;
     }
     @media (min-width: 1400px) {
-      height: 78px;
+      height: 60px;
     }
   }
 }
 
 textarea.form-control {
   border-radius: $textarea_border_radius_mob;
-  min-height: 90px;
+  min-height: 100px;
   @media (min-width: 768px) {
     height: 100px;
   }
   @media (min-width: 1200px) {
     border-radius: $textarea_border_radius;
-    height: 115px;
+    height: 117px;
   }
 }
 
 .custom-file {
   display: block;
-  width: 214px;
+  width: 216px;
   height: auto;
   position: relative;
+  transform: translateY(-10px);
   @media (min-width: 768px) {
-    width: 214px;
+    width: 216px;
   }
   @media (min-width: 1200px) {
-    width: 281px;
+    width: 380px;
+    transform: translateY(-20px);
   }
 
   .custom-file-input {

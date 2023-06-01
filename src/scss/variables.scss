@@ -11,13 +11,13 @@ $bg_light_1:                #F9F5F2;
 $bg_light_2:                #FE91E8;
 $bg_light_3:                #E4E7EE;
 $bg_light_4:                #D3D3D3;
-/**/$bg_light_5:                #D3E9DE;
+$bg_light_5:                #FFDEF8;
 $font_color:                #F9F5F2;
 $font_color2:               #000000;
 $font_color3:               $body_bg_color;
 $font_color4:               #527EFF;
 $font_color5:               #322C0C;
-/**/$font_color6:               #99A0DE;
+$font_color6:               #828282;
 /**/$font_color7:               #232323;
 $font_family:               "WorkSans", sans-serif;
 $font_family2:              "WorkSans", sans-serif;
@@ -41,23 +41,23 @@ $footer_text_color_hover:   $font_color3;
 $footer_text_color_active:  $font_color4;
 
 //Form
-$input_bg:                  $bg_light_4;
+$input_bg:                  $bg_light_3;
 $input_hover_bg:            $bg_light_5;
 $input_txt_family:          $font_family;
-$input_txt_color:           $font_color7;
-$input_hover_txt_color:     $font_color7;
+$input_txt_color:           $font_color5;
+$input_hover_txt_color:     $font_color5;
 $input_placeholder_color:   $font_color6;
-$input_txt_xs_size:         16px;
+$input_txt_xs_size:         15px;
 $input_txt_xs_lh:           1.5;
-$input_txt_size:            25px;
+$input_txt_size:            18px;
 $input_txt_lh:              1.5;
 $input_border_color:        $font_color;
 $input_border:              none;
 $input_hover_border:        none;
 $input_hover_focus_outline: none;
-$input_border_radius:       0;
-$textarea_border_radius:    0;
-$textarea_border_radius_mob:0;
+$input_border_radius:       50px;
+$textarea_border_radius:    14px;
+$textarea_border_radius_mob:20px;
 
 
 //User List page wider

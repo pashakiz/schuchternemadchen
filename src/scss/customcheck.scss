@@ -3,22 +3,23 @@ $cc_font_color: $font_color;
 $cc_font_size_mob: 15px;
 $cc_font_size: 22px;
 
-$cc_icon_color: $bg_light_4;
-$cc_icon_width_mob: 24px;
-$cc_icon_height_mob: 24px;
-$cc_icon_width: 40px;
-$cc_icon_height: 40px;
-$cc_icon_right_mob: 9px;
+$cc_icon_color: $bg_light_3;
+$cc_icon_width_mob: 28px;
+$cc_icon_height_mob: 28px;
+$cc_icon_width: 30px;
+$cc_icon_height: 30px;
+$cc_icon_right_mob: 12px;
 $cc_icon_right: 18px;
 $cc_icon_bradius: 100%;
 $cc_icon_border: none;
 
-$cc_mark_color: $bg_light_3;
-$cc_mark_width_mob: 12px;
-$cc_mark_height_mob: 12px;
-$cc_mark_width: 20px;
-$cc_mark_height: 20px;
+$cc_mark_color: $bg_light_2;
+$cc_mark_width_mob: 13px;
+$cc_mark_height_mob: 13px;
+$cc_mark_width: 14px;
+$cc_mark_height: 14px;
 $cc_mark_bradius: 100%;
+$cc_mark_border: 1px solid $font_color2;
 
 //switcher
 $cs_font_color: $font_color;
@@ -119,6 +120,7 @@ $csi_icon_right: 20px;
       .customcheck__icon {
         .customcheck__mark {
           background-color: $cc_mark_color;
+          border: $cc_mark_border;
         }
       }
       .customcheck__txt {
