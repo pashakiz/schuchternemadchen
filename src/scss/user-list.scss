@@ -4,7 +4,7 @@ $ulist-img-width-lg: 240px;
 $ulist-img-height-lg: 370px;
 
 .main_ul {
-  background: linear-gradient(to bottom, $bg_dark_1 180px, transparent 0);
+  background: linear-gradient(to bottom, $body_bg_color 180px, transparent 0);
   background-position: 50% 270px;
   @media (min-width: 325px) {
     background-position: 50% 235px;
@@ -13,12 +13,12 @@ $ulist-img-height-lg: 370px;
     background-position: 50% 210px;
   }
   @media (min-width: $user_list_item_breakpoint) {
-    background: linear-gradient(to bottom, $bg_dark_1 450px, transparent 0);
+    background: linear-gradient(to bottom, $body_bg_color 450px, transparent 0);
     background-position: 50% 260px;
   }
   @media (min-width: 1200px) {
     margin-top: 55px;
-    background: linear-gradient(to bottom, $bg_dark_1 530px, transparent 0);
+    background: linear-gradient(to bottom, $body_bg_color 530px, transparent 0);
     background-position: 50% 0;
   }
 }
