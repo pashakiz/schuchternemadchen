@@ -51,38 +51,59 @@
 .splide__pagination {
   padding-left: 0;
   overflow: hidden;
-  height: 15px;
+  height: 7px;
   @media (min-width: 1200px) {
-    height: 17px;
+    height: 10px;
   }
 }
 
 .splide__pagination__page {
-  background: transparent;
-  border: 1px solid $font_color;
-  border-radius: 100%;
+  background: $bg_light_1;
+  border: 1px solid $bg_light_1;
+  border-radius: 100px;
   display: inline-block;
-  width: 11px;
-  height: 11px;
-  margin: 0 6px;
+  width: 30px;
+  height: 10px;
+  margin: 0 7px;
   padding: 0;
   position: relative;
-  transition: background-color .2s ease, color .2s ease;
+  transition: background-color .2s ease, border-color .2s ease;
   @media (min-width: 1200px) {
-    width: 17px;
-    height: 17px;
+    width: 42px;
+    height: 10px;
     margin: 0 10px;
   }
 
   &.is-active {
     background: $btn_bg_color;
-    border-color: $btn_bg_color;
+    border-color: $bg_dark_2;
   }
 }
 
 .splide_up {
   .splide__pagination {
-    display: none;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -70px);
+    width: 90%;
+    @media (min-width: 1200px) {
+      width: 100%;
+      transform: none;
+      position: static;
+      margin-top: 15px;
+    }
+  }
+
+  .splide__pagination__page {
+    width: 30px;
+    height: 10px;
+    margin: 0 15px;
+    @media (min-width: 1200px) {
+      width: 30px;
+      height: 10px;
+      margin: 0 15px;
+    }
   }
 }
 

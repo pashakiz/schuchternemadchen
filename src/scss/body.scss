@@ -57,12 +57,13 @@ body {
   }
 
   &.container_profile {
-    @include make-container(0px);
+    padding-top: 40px;
+    @include make-container(40px);
     @media (min-width: 768px) {
       @include make-container(30px);
     }
-    @media (min-width: 1200px) {
-      padding-top: 15px;
+    @media (min-width: 992px) {
+      padding-top: 73px;
     }
   }
 
