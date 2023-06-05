@@ -265,21 +265,21 @@ $userprofile-img-wrap-height-xl: 486px;
 
     .compatibility__progress {
       &.progress {
-        width: 40px;
-        height: 18px;
+        width: 44px;
+        height: 15px;
         @media (min-width: $user_list_item_breakpoint) {
-          width: 70px;
-          height: 30px;
+          width: 50px;
+          height: 20px;
         }
       }
     }
 
     .compatibility__title {
-      font-size: 9px;
-      margin-top: 7px;
+      font-size: 11px;
+      margin-top: 4px;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 14px;
-        margin-top: 13px;
+        font-size: 13px;
+        margin-top: 10px;
       }
     }
   }

@@ -51,9 +51,9 @@
 .splide__pagination {
   padding-left: 0;
   overflow: hidden;
-  height: 7px;
+  height: 13px;
   @media (min-width: 1200px) {
-    height: 10px;
+    height: 20px;
   }
 }
 
@@ -107,13 +107,16 @@
   }
 }
 
-.splide_ulist, .splide_ulist-extra, .splide_fback {
-  .splide__pagination {
-    display: none;
-  }
-}
-
 .splide_ulist {
+  .splide__pagination {
+    position: absolute;
+    left: 0;
+    top: 27px;
+    @media (min-width: 1200px) {
+      top: 52px;
+    }
+  }
+
   .splide__arrows {
     bottom: -43px;
     padding: 0;
@@ -129,6 +132,9 @@
 }
 
 .splide_ulist-extra {
+  .splide__pagination {
+    display: none;
+  }
   .splide__arrows {
     bottom: -18px;
     padding: 0;
