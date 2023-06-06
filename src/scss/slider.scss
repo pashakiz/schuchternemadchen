@@ -184,6 +184,21 @@
 }
 
 .splide_fback {
+  .splide__pagination {
+    height: 20px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    @media (min-width: 1200px) {
+      width: auto;
+      top: auto;
+      bottom: -56px;
+      left: 0;
+      transform: none;
+    }
+  }
   .splide__arrows {
     bottom: -43px;
     padding: 0;

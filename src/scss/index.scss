@@ -97,54 +97,79 @@
 }
 
 .userfback {
-  @media (min-width: 1200px) {}
+  font-family: $font_family;
+  font-weight: 400;
+  padding: 11px 0;
+  @media (min-width: 1200px) {
+    padding: 10px 0;
+  }
 }
 
 .userfback__inner {
   position: relative;
-  padding: 40px 20px 25px;
-  background-image: url('../img/bg/bg-fback-m.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100%;
-  max-width: 170px;
-  min-height: 270px;
+  padding: 35px 20px;
+  background-color: $bg_light_1;
+  max-width: 220px;
+  min-height: 210px;
+  border: 1px solid $bg_dark_2;
+  border-radius: 28px;
   @media (min-width: 1200px) {
-    background-image: url('../img/bg/bg-fback.svg');
-    max-width: 294px;
-    min-height: 400px;
-    max-height: 400px;
-    padding: 76px 35px 50px;
+    max-width: 446px;
+    min-height: 190px;
+    max-height: 190px;
+    padding: 38px 33px;
+    border-radius: 53px;
+  }
+
+  &::before, &::after {
+    position: absolute;
+    color: $bg_dark_1;
+    line-height: 1;
+    font-size: 102px;
+    @media (min-width: 1200px) {
+      font-size: 111px;
+    }
+  }
+
+  &::before {
+    content: '“';
+    top: -26px;
+    left: 14px;
+    @media (min-width: 1200px) {
+      left: 29px;
+    }
+  }
+
+  &::after {
+    content: '”';
+    bottom: -72px;
+    right: 14px;
+    @media (min-width: 1200px) {
+      bottom: -77px;
+      right: 29px;
+    }
   }
 }
 
 .userfback__name {
-  font-family: $font_family2;
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 0 0 10px 0;
-  @media (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 39px;
-    margin: 0 0 16px 0;
-  }
+  @media (min-width: 1200px) {}
 }
 
 .userfback__txt {
-  font-family: $font_family;
+  font-family: $font_family2;
+  color: $bg_dark_1;
   font-weight: 400;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 28px;
   @media (min-width: 1200px) {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
   }
   p {
-    line-height: 16px;
+    line-height: 28px;
     margin-bottom: 5px;
     @media (min-width: 1200px) {
-      line-height: 32px;
+      line-height: 28px;
     }
   }
 }

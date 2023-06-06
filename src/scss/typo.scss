@@ -156,11 +156,22 @@ h2 {
   margin-top: 0;
   text-align: left;
   text-shadow: 3px 2px $font_color2;
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     font-size: 76px;
     line-height: 1;
     margin-bottom: 68px;
     text-shadow: 5px 6px $font_color2;
+  }
+
+  &.h2_main {
+    font-size: 38px;
+    text-align: center;
+    margin: 40px 0 76px;
+    @media (min-width: 1200px) {
+      text-align: left;
+      font-size: 76px;
+      margin: 80px 0 60px;
+    }
   }
 
   &.h2_index {
