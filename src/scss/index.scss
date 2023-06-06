@@ -15,10 +15,15 @@
   }
 
   &.secondscreen_2 {
-    padding-top: 46px;
-    @media (min-width: 1200px) {
-      padding-top: 164px;
-    }
+    @media (min-width: 1200px) {}
+  }
+}
+
+.secondscreen__top {
+  background-color: $body_bg_color;
+  padding: 0 0 56px;
+  @media (min-width: 1200px) {
+    padding: 0 0 56px;
   }
 }
 
@@ -27,13 +32,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 38px;
-  padding: 0 20px;
+  margin: 0 auto;
   //overflow: hidden;
   @media (min-width: 1200px) {
-    //width: 410px;
-    //min-width: 410px;
-    margin: 0 auto 73px;
+    align-items: flex-start;
   }
   .countdown-js {
     width: 100%;
@@ -41,16 +43,13 @@
 }
 
 .timer__title {
-  font-family: $font_family2;
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 1.2;
-  color: $font_color2;
-  text-transform: uppercase;
+  font-size: 38px;
   text-align: center;
+  margin: 113px 0 0;
   @media (min-width: 1200px) {
-    font-size: 90px;
-    line-height: 94px;
+    text-align: left;
+    font-size: 76px;
+    margin: 48px 0 0;
   }
 }
 
@@ -58,22 +57,23 @@
   font-family: $font_family2;
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 1.2;
   color: $font_color;
-  text-transform: uppercase;
   text-align: center;
-  margin: 26px 0 24px;
+  margin: 19px 0 52px;
+  letter-spacing: 2px;
   @media (min-width: 1200px) {
-    font-size: 24px;
-    line-height: 62px;
-    margin: 5px 0;
+    text-align: left;
+    font-size: 21px;
+    line-height: 31px;
+    margin: 17px 0 105px;
   }
 }
 
 .splide_ulist-extra-login {
   @media (min-width: 576px) {
     margin: 0 auto;
-    max-width: 482px;
+    max-width: 470px;
   }
   @media (min-width: 768px) {
     max-width: 650px;
@@ -83,9 +83,6 @@
   }
   @media (min-width: 1200px) {
     max-width: none;
-  }
-  @media (min-width: 1400px) {
-    max-width: 1142px;
   }
 }
 

@@ -109,6 +109,7 @@ $ulist-img-height-lg: 208px;
     position: absolute;
     left: 0;
     bottom: 22px;
+    z-index: 3;
     @media (min-width: $user_list_item_breakpoint) {
       bottom: 25px;
     }
@@ -121,6 +122,8 @@ $ulist-img-height-lg: 208px;
     background-color: $bg_light_1;
     border: 1px solid #000;
     border-top: none;
+    margin-top: -1px;
+    z-index: 0;
     @media (min-width: $user_list_item_breakpoint) {
       padding: 10px 0 25px;
     }
@@ -198,11 +201,19 @@ $ulist-img-height-lg: 208px;
   }
 
   &.user-list-item_extra {
+    &::after {
+      border-radius: 33px 33px 26px 26px;
+      height: 250px;
+      @media (min-width: $user_list_item_breakpoint) {
+        border-radius: 38px 38px 26px 26px;
+        height: 308px;
+      }
+    }
     @include color-filter($body_bg_color, 0.78);
     box-shadow: none;
-    height: 252px;
+    height: 260px;
     @media (min-width: $user_list_item_breakpoint) {
-      height: 304px;
+      height: 324px;
     }
     //.user-list-item__photo {}
     //.user-list-item__img {}
@@ -216,9 +227,9 @@ $ulist-img-height-lg: 208px;
     }
     .user-list-item__btn {
       z-index: 2;
-      bottom: 3px;
+      bottom: 12px;
       @media (min-width: $user_list_item_breakpoint) {
-        bottom: 6px;
+        bottom: 20px;
       }
     }
   }

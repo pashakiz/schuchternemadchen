@@ -33,6 +33,10 @@ body {
     max-width: $container-xxxl;
   }
 
+  &.container_relative {
+    position: relative;
+  }
+
   &.container_text {
     padding-top: 37px;
     @media (min-width: 1200px) {
