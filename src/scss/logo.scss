@@ -12,21 +12,18 @@
   }
 
   &.logo_main {
-    margin: 42px 0;
+    margin: 14px 0 19px;
     @media (min-width: 992px) {
-      margin: 119px 0 0;
+      background-image: url('../img/icons/logo_m.svg');
+      margin: 14px 0 19px;
+      width: 240px;
+      height: 37px;
     }
     @media (min-width: 1200px) {
-      width: 590px;
-      height: 57px;
-    }
-    @media (min-width: 1400px) {
-      width: 650px;
-      height: 57px;
-    }
-    @media (min-width: 1650px) {
-      width: 772px;
-      height: 57px;
+      background-image: url('../img/icons/logo.svg');
+      margin: 101px 0 27px;
+      width: 336px;
+      height: 62px;
     }
   }
 
