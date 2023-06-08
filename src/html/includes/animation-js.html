@@ -28,19 +28,20 @@
     }
 
     function showAreaIndex() {
-      document.body.classList.add('bg-index');
       document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
     }
     function hideAreaIndex() {
-      document.querySelector('.h1-index_main').style.display = 'none';
+      document.querySelectorAll('.h1-index_main').forEach(e => e.style.display = 'none');
       document.querySelector('.fsi-btn .btn-index').style.display = 'none';
+      document.querySelector('.fs-collage .fs-collage__img').classList.remove('img1');
     }
 
     function showAreaSearch() {
       document.body.classList.add('bg-color');
-      document.querySelector('.h1-index_search').style.display = 'block';
+      document.querySelectorAll('.h1-index_search').forEach(e => e.style.display = 'block');
       document.querySelector('.fsi-btn .search-progress.progress').style.display = 'block';
+      document.querySelector('.fs-collage .fs-collage__img').classList.add('img2');
       loading();
     }
 
@@ -48,6 +49,7 @@
       //document.body.classList.remove('bg-index');
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
       document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'none';
+      document.querySelector('.fs-collage .fs-collage__img').classList.remove('img2');
     }
 
     function goToLogin() {
@@ -91,8 +93,9 @@
 
     function showAreaLogin() {
       //document.body.classList.add('bg-login');
-      document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'block';
+      document.querySelector('.firstscreen__info.firstscreen__info3').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_2').style.display = 'block';
+      document.querySelector('.fs-collage .fs-collage__img').classList.add('img3');
     }
 
     function preloaderOn() {
