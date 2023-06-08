@@ -1,4 +1,4 @@
-# clickdeamor
+# schuchternemadchen
 
 # Demo:
 https://pashakiz.github.io/schuchternemadchen/dist/index.html
