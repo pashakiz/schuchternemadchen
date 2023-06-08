@@ -1,17 +1,32 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
-  <script>
-    document.body.classList.add('bg-color');
-  </script>
   <main class="main">
     <header class="firstscreen">
       <div class="container container_xxxl">
-        <div class="d-flex justify-content-center justify-content-xl-start align-items-center">
+        <div class="d-flex d-xl-none justify-content-center align-items-center">
           <div class="logo logo_main"></div>
         </div>
         <div class="firstscreen__inner">
-          <div class="firstscreen__info firstscreen__info1">
-            <div class="h1-index h1-index_main" style="display: block;">Combinations<br>for your best&nbsp;<br class="d-none d-xl-block">&&nbsp;<br class="d-xl-none">Hot evening</div>
-            <div class="h1-index h1-index_search" style="display: none;">Searching your<br>best matches</div>
+          <div class="d-xl-none">
+            <div class="h1-index h1-index_main" style="display: block;">
+              <span class="row1">Combinations for your</span><br>
+              <span class="row2">Best & Hot</span><br>
+              <span class="row3">Evening</span>
+            </div>
+            <div class="h1-index h1-index_search" style="display: none;">Searching<br>your best<br>matches</div>
+          </div>
+          <div class="fs-collage order-xl-2">
+            <div class="fs-collage__img img1"></div>
+          </div>
+          <div class="firstscreen__info firstscreen__info1 order-xl-1">
+            <div class="d-none d-xl-block logo logo_main"></div>
+            <div class="d-none d-xl-block">
+              <div class="h1-index h1-index_main" style="display: block;">
+                <span class="row1">Combinations for your</span><br>
+                <span class="row2">Best & Hot</span><br>
+                <span class="row3">Evening</span>
+              </div>
+              <div class="h1-index h1-index_search" style="display: none;">Searching<br>your best<br>matches</div>
+            </div>
             <div class="fsi-btn">
               <button class="btn btn_1 btn-index" style="display: block;">Unlock My Matches</button>
               <div class="search-progress progress" style="display: none;">
@@ -25,9 +40,6 @@
               </div>
             </div>
           </div>
-          <div class="fs-collage">
-            <div class="fs-collage__img"></div>
-          </div>
         </div>
       </div>
     </header>
@@ -35,21 +47,15 @@
       <div class="container container_xxxl">
         <div class="row">
           <div class="col">
-            <div class="row">
-              <div class="col-12 col-xxl-6 pe-xxl-5">
-                <h2 class="h2_index"><span class="letter">R</span>elease&nbsp;<br class="d-none d-xl-block"><span class="smaller">My&nbsp;<br class="d-xl-none">combinations</span></h2>
-              </div>
-              <div class="col-12 col-xxl-6 ps-xxl-5">
-                <p class="pmain">We have created a unique combination system that consists of three main factors that produce
-                  similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated
-                  form, connects people who have interests in similar activities, passions and future aspirations. We
-                  also add our own personal touch to the online dating process ensuring that your experience is
-                  special and exclusive to you.</p>
-                <p class="pmain">Instead of spending weeks looking for your best combination, we send you a personalized combination
-                  every day by email. As these presentations have been carefully selected based on your NF (Life,
-                  Freedom and Culture) score, you can spend more time talking or planning your first night out.</p>
-              </div>
-            </div>
+            <h2 class="h2_index">Release my&nbsp;<br class="d-xl-none">combinations</h2>
+            <p class="pmain">We have created a unique combination system that consists of three main factors that produce
+              similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated
+              form, connects people who have interests in similar activities, passions and future aspirations. We
+              also add our own personal touch to the online dating process ensuring that your experience is
+              special and exclusive to you.</p>
+            <p class="pmain">Instead of spending weeks looking for your best combination, we send you a personalized combination
+              every day by email. As these presentations have been carefully selected based on your NF (Life,
+              Freedom and Culture) score, you can spend more time talking or planning your first night out.</p>
           </div>
         </div>
       </div>
